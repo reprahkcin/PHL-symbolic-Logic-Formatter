@@ -1,0 +1,21 @@
+.toolbar{
+    text-align: center;
+    padding: 15px;
+}
+
+.submission{
+    text-align: center;
+    padding: 15px;
+}
+
+#text-area{
+font-size: 2em;
+}
+
+.symbol{
+    font-size: 3em;
+    padding:0px 9px 6px 9px;
+}
+.textArea{
+    height: 100px;
+}
