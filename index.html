@@ -1,38 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Symbolic Logic Formatter</title>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 </head>
+
 <body>
-<div class="container">
-    <div class="btn-grp toolbar" role="group" aria-label="Insert Group">
-        <button onclick="insertIntoFormula('~')" type="button" class="btn btn-secondary"><div class="symbol">~</div></button>
-        <button onclick="insertIntoFormula('•')" type="button" class="btn btn-secondary"><div class="symbol">•</div></button>
-        <button onclick="insertIntoFormula('⊃')" type="button" class="btn btn-secondary"><div class="symbol">⊃</div></button>
-        <button onclick="insertIntoFormula('∨')" type="button" class="btn btn-secondary"><div class="symbol">∨</div></button>
-        <button onclick="insertIntoFormula('≡')" type="button" class="btn btn-secondary"><div class="symbol">≡</div></button>
-
-    </div>
-
-    <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Enter Proof</span>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="btn-grp toolbar" role="group" aria-label="Insert Group">
+                    <button onclick="insertIntoFormula('−')" type="button" class="btn btn-secondary insert">
+                        <div class="symbol">-</div>
+                    </button>
+                    <button onclick="insertIntoFormula('&')" type="button" class="btn btn-secondary insert">
+                        <div class="symbol">&</div>
+                    </button>
+                    <button onclick="insertIntoFormula('v')" type="button" class="btn btn-secondary insert">
+                        <div class="symbol">v</div>
+                    </button>
+                    <button onclick="insertIntoFormula('→')" type="button" class="btn btn-secondary insert">
+                        <div class="symbol">→</div>
+                    </button>
+                    <button onclick="insertIntoFormula('↔')" type="button" class="btn btn-secondary insert">
+                        <div class="symbol">↔</div>
+                    </button>
+                    <button onclick="insertIntoFormula('ⱶ')" type="button" class="btn btn-secondary insert">
+                        <div class="symbol">ⱶ</div>
+                    </button>
+                    <button onclick="insertIntoFormula('⟛')" type="button" class="btn btn-secondary insert">
+                        <div class="symbol">⟛</div>
+                    </button>
+                    <button onclick="insertIntoFormula('Ǝ')" type="button" class="btn btn-secondary insert">
+                        <div class="symbol">Ǝ</div>
+                    </button>
+                    <button onclick="insertIntoFormula('≠')" type="button" class="btn btn-secondary insert">
+                        <div class="symbol">≠</div>
+                    </button>
+                </div>
+            </div>
         </div>
-        <textarea id="text-area" class="form-control" aria-label="With textarea"></textarea>
-      </div>
+        <div class="row">
+            <div class="col-2">
+            <textarea id=''></textarea> 
+            </div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+        </div>
 
-    <div class="btn-grp submission" role="group" aria-label="Submission Group">
-        <button onclick="submitProof()" type="button" class="btn btn-success">Submit</button>
-        <button onclick="clearTextBox()" type="button" class="btn btn-warning">Clear</button>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Enter Proof</span>
+            </div>
+            <textarea id="text-area" class="form-control" aria-label="With textarea"
+                onclick="setActiveTextBox()"></textarea>
+        </div>
+
+        <div class="btn-grp submission" role="group" aria-label="Submission Group">
+            <button onclick="addRow()" type="button" class="btn btn-success">Submit</button>
+            <button onclick="clearTextBox()" type="button" class="btn btn-warning">Clear</button>
+        </div>
     </div>
-</div>
+    <div class="container" id="row-container">
 
-    
+    </div>
+
+
 </body>
+
 </html>

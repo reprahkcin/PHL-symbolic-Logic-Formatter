@@ -13,9 +13,33 @@ font-size: 2em;
 }
 
 .symbol{
-    font-size: 3em;
+    font-size: 2em;
     padding:0px 9px 6px 9px;
 }
 .textArea{
     height: 100px;
+}
+
+.insert{
+    min-width: 75px;
+}
+.row-wrapper{
+    min-height: 25px;
+}
+
+.col1-textbox{
+width: inherit;
+text-align: center;
+}
+.col2-textbox{
+    width: inherit;
+}
+.col3-textbox{
+    width: inherit;
+}
+.col4-textbox{
+    width: inherit;
+}
+.col5-textbox{
+    width: inherit;
 }
