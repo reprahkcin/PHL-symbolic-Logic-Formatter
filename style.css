@@ -28,18 +28,18 @@ font-size: 2em;
 }
 
 .col1-textbox{
-width: inherit;
+width: 100%;
 text-align: center;
 }
 .col2-textbox{
-    width: inherit;
+    width: 100%;
 }
 .col3-textbox{
-    width: inherit;
+    width: 100%;
 }
 .col4-textbox{
-    width: inherit;
+    width: 100%;
 }
 .col5-textbox{
-    width: inherit;
+    width: 100%;
 }
