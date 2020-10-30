@@ -41,9 +41,6 @@
                     <button onclick="insertIntoFormula('Ǝ')" type="button" class="btn btn-secondary insert">
                         <div class="symbol">Ǝ</div>
                     </button>
-                    <button onclick="insertIntoFormula('≠')" type="button" class="btn btn-secondary insert">
-                        <div class="symbol">≠</div>
-                    </button>
                 </div>
             </div>
         </div>
@@ -58,15 +55,13 @@
         </div>
 
         <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text">Enter Proof</span>
-            </div>
+            
             <textarea id="text-area" class="form-control" aria-label="With textarea"
                 onclick="setActiveTextBox()"></textarea>
         </div>
 
         <div class="btn-grp submission" role="group" aria-label="Submission Group">
-            <button onclick="addRow()" type="button" class="btn btn-success">Submit</button>
+            <button onclick="copyToClipboard()" type="button" class="btn btn-success">Copy</button>
             <button onclick="clearTextBox()" type="button" class="btn btn-warning">Clear</button>
         </div>
     </div>
